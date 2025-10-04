@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>ZeesuMax</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background Video -->
+    <video id="bg-video" autoplay muted loop playsinline poster="bgi.jpg">
+        <source src="bg.mp4" type="video/mp4">
+    </video>
+
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <button class="hamburger" onclick="toggleAside()">
+                <span>&#9776;</span>
+            </button>
+            <div class="header-logo">ZeesuMax</div>
+            <nav class="header-nav">
+                <a href="#" class="active">Home</a>
+                <a href="#">Movies</a>
+                <a href="#">TV Shows</a>
+                <a href="#">New</a>
+                <a href="#">My List</a>
+            </nav>
+        </div>
+        <div class="header-right">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="user-actions">
+                <button>Sign In</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside id="sideMenu">
+        <div class="logo">StreamFlix</div>
+        <nav>
+            <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-fire"></i> Trending</a>
+            <a href="#"><i class="fas fa-music"></i> Music</a>
+            <a href="#"><i class="fas fa-gamepad"></i> Gaming</a>
+            <a href="#"><i class="fas fa-graduation-cap"></i> Education</a>
+            <a href="#"><i class="fas fa-theater-masks"></i> Entertainment</a>
+            <a href="#"><i class="fas fa-running"></i> Sports</a>
+        </nav>
+        <div class="library">
+            <a href="#"><i class="fas fa-heart"></i> Liked Videos</a>
+            <a href="#"><i class="fas fa-history"></i> Watch History</a>
+            <a href="#"><i class="fas fa-clock"></i> Watch Later</a>
+        </div>
+        <div class="settings">
+            <a href="#"><i class="fas fa-cog"></i> Settings</a>
+        </div>
+    </aside>
+
+    <!-- Main Section -->
+    <main>
+        <div class="hero">
+            <div class="hero-badges">
+                <span class="badge">FEATURED</span>
+                <span class="badge secondary">NEW EPISODE</span>
+            </div>
+            <div class="hero-title">
+                Endless <span class="accent">Entertainment</span>
+            </div>
+            <div class="hero-desc">
+                Discover stories from around the world. Stream your favorite movies, shows, and documentaries in HD — ad-free, just the way you love it.
+            </div>
+            <div class="hero-actions">
+                <button class="btn"><i class="fas fa-play"></i> Play Now</button>
+                <button class="btn"><i class="fas fa-info-circle"></i> More Info</button>
+            </div>
+            <div class="stats">
+                <div class="stat">5M+ <span>Happy Users</span></div>
+                <div class="stat">10K+ <span>HD Videos</span></div>
+                <div class="stat">24/7 <span>Streaming</span></div>
+            </div>
+        </div>
+
+
+        <!-- Video Cards Section -->
+        <section class="video-section">
+            <h2 class="section-title">Popular Now</h2>
+            <br>
+            <div class="video-grid">
+                <!-- Video Card 1 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2024/12/12/246391_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 2 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2025/04/27/275052_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 3 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2020/08/29/48504-454713939_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Video Card 4 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2024/03/11/203845-922675645_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Video Card 5 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2025/07/22/292827_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Video Card 6 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2021/02/20/65801-515379581_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 7 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2024/05/19/212632_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 8 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2016/07/22/3952-175860892_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Video Card 9 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2019/06/23/24602-344986228_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Video Card 10 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2019/02/01/21116-315137080_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 11 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2019/02/01/21115-315137069_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 12 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2020/10/31/53902-476396222_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 13 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2025/04/10/271161_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Video Card 14 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Video Card 15 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 16 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2025/03/28/268290_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 17 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 18 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2023/10/20/185787-876545918_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Video Card 19 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2019/02/02/21147-315137137_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Video Card 20 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2024/01/25/198113-906522636_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 21 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2024/11/27/243647_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 22 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2023/01/30/148594-794221537_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Card 23 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2025/01/03/250395_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Video Card 24 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2024/02/28/202368-918049003_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Video Card 25 -->
+                <div class="video-card">
+                    <video class="video-thumb" controls>
+                        <source src="https://cdn.pixabay.com/video/2024/09/01/229275_large.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-info">
+                        <h3 class="video-title">Epic Adventure</h3>
+                        <p class="video-desc">
+                            Join the heroes in this action-packed adventure that will keep you on the edge of your seat.
+                        </p>
+                        <div class="video-meta">
+                            <span><i class="fas fa-clock"></i> 2h 15m</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+  <!-- Movie Details section -->
+
+        <div class="container">
+            <div class="logo">
+                <h1>CinemaScore</h1>
+                <p>Discover movies, explore ratings, and find your next favorite film</p>
+            </div>
+
+            <div class="search-container">
+                <form action="">
+                    <input type="text" placeholder="Enter movie title..." class="inputBox" />
+                    <button type="submit" class="searchBtn">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </form>
+            </div>
+
+            <div class="movie-container">
+                <div class="welcome-screen">
+                    <i class="fas fa-film"></i>
+                    <h2>Discover Your Next Favorite Movie</h2>
+                    <p>Search for any movie to get detailed information including ratings, cast, plot summary, and more.</p>
+                    <p>Try searching for movies like "The Dark Knight", "Inception", or "Pulp Fiction"</p>
+                    
+                    <div class="featured-movies">
+                        <div class="featured-movie" data-movie="The Avengers">
+                            <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" alt="The Avengers">
+                            <p>The Avengers</p>
+                        </div>
+                        <div class="featured-movie" data-movie="The Dark Knight">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg" alt="The Dark Knight">
+                            <p>The Dark Knight</p>
+                        </div>
+                        <div class="featured-movie" data-movie="Inception">
+                            <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg" alt="Inception">
+                            <p>Inception</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-info">
+                    <!-- Movie will show here -->
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+  <!-- ===== Footer Start ===== -->
+  <footer class="site-footer" aria-labelledby="footer-heading">
+    <a class="footer__backtotop" href="#top" aria-label="Back to top">- About The Zeesu Royalist Company -</a>
+
+    <div class="footer__top" role="presentation">
+      <h2 id="footer-heading" class="sr-only" style="position:absolute;left:-9999px;">वेबसाइट फ़ुटर</h2>
+
+      <!-- 4‑col link sections -->
+      <nav class="footer__grid" aria-label="Primary footer">
+        <section class="footer__col" aria-labelledby="f1">
+          <h3 id="f1">About ZeesuMax</h3>
+          <p>Discover stories from around the world. Stream your favorite movies, shows, and documentaries in HD, adds free, just the way you love it.</p>
+        </section>
+
+        <section class="footer__col" aria-labelledby="f2">
+          <h3 id="f2">Quik Links</h3>
+          <ul class="footer__links">
+            <li><a href="https://www.instagram.com/zeesu_royalist/" target="blank">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/mohammad-jishan-4361972ba/" target="blank">LinkedIn</a></li>
+            <li><a href="https://x.com/zeesuroyalist" target="blank">Twitter</a></li>
+            <li><a href="https://www.facebook.com/p/Zeesu-Royalist-100064169071412/" target="blank">Facebook</a></li>
+            <li><a href="https://www.snapchat.com/add/zeesu_royalist" target="blank">Snapchat</a></li>
+          </ul>
+        </section>
+
+        <section class="footer__col" aria-labelledby="f3">
+          <h3 id="f3">Other Platforms</h3>
+          <ul class="footer__links">
+            <li><a href="https://github.com/zeesu-royalist" target="blank">GitHub</a></li>
+            <li><a href="https://leetcode.com/u/zeesu_royalist/" target="blank">LeetCode</a></li>
+            <li><a href="https://in.pinterest.com/zeesu_royalist/" target="blank">Pinterest</a></li>
+            <li><a href="https://zeesuroyalist.tumblr.com/likes" target="blank">Tumblr</a></li>
+            <li><a href="https://www.google.com/search?q=zeesu+royalist" target="blank">Google</a></li>
+          </ul>
+        </section>
+
+        <section class="footer__col" aria-labelledby="f4">
+          <h3 id="f4">Contact Us</h3>
+          <ul class="footer__links">
+            <li><a href="https://wa.me/9999736978" target="blank">WhatsApp.</a></li>
+            <li><a href="https://www.messenger.com/login.php?https%3A%2F%2Fwww.messenger.com%2Ft%2F100013460175762%2F%3Fhandler%3Dm.me" target="blank">Messenger.</a></li>
+            <li><a href="9999730618" target="blank">Phone no.</a></li>
+            <li><a href="mailto:rzeesu@gmail.com" target="blank">Email.</a></li>
+            <li><a href="https://www.google.com/search?q=zeesu+royalist" target="blank">Search.</a></li>
+          </ul>
+        </section>
+        <!-- Newsletter / App badges card (spans full width on small screens) -->
+
+      </nav>
+
+      <div class="footer__divider" role="separator" aria-hidden="true"></div>
+
+      <!-- brand + locale controls -->
+      <div class="footer__brandbar" aria-label="Brand and locale">
+        <a class="brand" href="#" aria-label="Homepage">
+          <svg class="brand__logo brand__mark" width="110" height="28" viewBox="0 0 110 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="110" height="28" rx="6" fill="#232f3e"/>
+            <text x="55" y="19" text-anchor="middle" fill="#febd69" font-family="Segoe UI, Roboto, Arial" font-weight="700" font-size="14">Our Websites</text>
+          </svg>
+        </a>
+        <div class="locale-controls">
+          <div class="chip" role="group" aria-label="Language">
+            <!-- globe icon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm7.9 9h-3.2a14.3 14.3 0 0 0-1.5-5 8.06 8.06 0 0 1 4.7 5zM12 4c1.2 1.6 2.2 3.7 2.6 6H9.4A15.5 15.5 0 0 1 12 4zM4.1 11a8.06 8.06 0 0 1 4.7-5 14.3 14.3 0 0 0-1.5 5H4.1zM4.1 13h3.2c.2 1.8.8 3.5 1.5 5a8.06 8.06 0 0 1-4.7-5zm5.3 0h5.2A13.7 13.7 0 0 1 12 20a13.7 13.7 0 0 1-2.6-7zm6.5 0h3.2a8.06 8.06 0 0 1-4.7 5c.7-1.5 1.3-3.2 1.5-5z"/></svg>
+            <select aria-label="Select language">
+              <option>हिन्दी (HI)</option>
+              <option selected>English (EN)</option>
+              <option>বাংলা (BN)</option>
+              <option>मराठी (MR)</option>
+              <option>தமிழ் (TA)</option>
+            </select>
+          </div>
+          <div class="chip" role="group" aria-label="Country">
+            <!-- location icon -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+            <button type="button" aria-label="Selected country">India</button>
+          </div>
+          <div class="chip" role="group" aria-label="Currency">
+            ₹ <button type="button">INR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deep link matrix like Amazon's bottom grid -->
+    <div class="footer__matrix">
+      <div class="wrap">
+        <div class="matrix" aria-label="Explore more">
+          <a href=""><span>ZeesuXen AI</span> Your AI assistant</a>
+          <a href="https://zeesu-royalist.github.io/Lib/"><span>Zeesu Lib</span> Online eBook store</a>
+          <a href="https://zeesu-royalist.github.io/Pixel/"><span>Zeesu Pixel</span> Free images downloader</a>
+          <a href=""><span>ZeesuVision AI</span> Generate any images</a>
+          <a href="https://zeesu-royalist.github.io/ReTouch/"><span>Zeesu Retouch</span> Free photo editing web</a>
+          <a href="https://zeesu-royalist.github.io/News/"><span>Zeesu News Cast</span> Real time worldwide news</a>
+          <a href="https://zeesu-royalist.github.io/Verse/#"><span>Zeesu Verse</span> A e-commerce website</a>
+          <a href="https://zeesu-royalist.github.io/WordTest/"><span>Zeesu WordText</span> improve typing speed here</a>
+          <a href="https://zeesu-royalist.github.io/Fusion/"><span>Zeesu Fusion Chinema</span> Online video streaming</a>
+          <a href="https://zeesu-royalist.github.io/NoteWeb/"><span>Zeesu NoteWeb</span> Save your notes online</a>
+          <a href="https://zeesu-royalist.github.io/music/"><span>Zeesu Music</span> Convert any text to audio</a>
+          <a href="https://zeesu-royalist.github.io/QR/"><span>Zeesu OR Studio</span> generate QR with links</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Legal -->
+    <div class="footer__legal">
+      <div class="legal__links" aria-label="Legal links">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Settings</a>
+        <a href="#">Return Policy</a>
+        <a href="#">Sitemap</a>
+      </div>
+      <div class="copyright">© <span id="year"></span> ZeesuMax Pvt. Ltd. All rights reserved.</div>
+      <p style="margin-top:1px;font-style:italic;font-size:10px;color:#f6f6f6;">
+  Powered by The 
+  <a href="https://www.google.com/search?q=zeesu+royalist" style="text-decoration:none;color:#f5f5f5;">
+    Zeesu Royalist Company
+  </a>
+</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script> 
+</body>
+</html>
